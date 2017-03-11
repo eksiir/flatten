@@ -1,0 +1,15 @@
+<div>
+  <button md-raised-button (click)="flattenObj()">Flatten</button>
+  <button md-raised-button (click)="unflattenObj()">Unflatten</button>
+  <button md-raised-button (click)="clear()">clear</button>
+</div>
+<md-input-container>
+  <textarea 
+    mdInput 
+    mdTextareaAutosize.minRows="20"
+    rows="{{ textRows }}"
+    cols="{{ textCols }}"
+    placeholder="{{ textPlaceholder }}" 
+    [(ngModel)]="text">
+  </textarea>
+</md-input-container>
